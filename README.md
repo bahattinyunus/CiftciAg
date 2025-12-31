@@ -1,6 +1,6 @@
 <div align="center">
 
-![ÇiftciAg Banner](C:/Users/Bahattin%20Yunus/.gemini/antigravity/brain/e5cebe8b-19ce-4c66-b222-e9bcbca28b97/ciftciag_hero_banner_1767184303983.png)
+![ÇiftciAg Banner](./assets/banner.png)
 
 ### 🌾 Türkiye'nin Dijital Tarım Platformu
 
