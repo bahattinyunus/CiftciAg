@@ -16,40 +16,38 @@
 
 ---
 
-## 🌱 Genel Bakış
+## 🌱 Genel Bakış: Tarımda Dijital Rönesans
 
-**ÇiftciAg**, çiftçiliği dijitalleştirmek ve verimliliği artırmak amacıyla geliştirilmiş uçtan uca bir akıllı tarım yönetim sistemidir. Gerçek zamanlı hava durumu verisi, ürün hastalık uyarıları, sulama takibi ve daha fazlasıyla tarımsal karar süreçlerini destekler.
+**ÇiftciAg**, modern tarımın karşı karşıya olduğu karmaşık zorluklara teknolojik bir yanıt olarak doğmuştur. Küresel gıda güvenliği endişelerinin arttığı ve iklim krizinin tarımsal verimliliği tehdit ettiği bir çağda, yerel çiftçilerimizin elindeki en büyük güç veridir. Bu platform, sadece bir yönetim aracı değil; toprağın dilini dijital ortama tercüme eden bir köprüdür.
+
+Uçtan uca tasarlanan bu ekosistem, geleneksel tarım yöntemlerini modern veri bilimi, IoT entegrasyonları ve bulut tabanlı karar destek sistemleri ile harmanlar. Amacımız, en küçük ölçekli üreticiden en büyük tarım işletmesine kadar herkesin, doğru zamanda doğru kararı vererek hem maliyetlerini düşürmesini hem de doğaya olan etkisini minimize etmesini sağlamaktır.
 
 ---
 
 ## ✨ Temel Özellikler
 
-### 🌾 Tarımsal Yönetim
-- **Akıllı Sulama**
-  - Hava durumu verisine dayalı otomatik planlama  
-  - Su tüketiminin optimize edilmesi  
-  - Bölgesel hava tahmin entegrasyonu  
+### 🌾 Stratejik Tarımsal Yönetim
+- **Akıllı Sulama ve Su Yönetimi (Smart Irrigation)**
+  - Mikroklimatik veriler ve anlık toprak nemi sensörleri (IoT) ile entegre çalışan algoritmalar sayesinde, bitkinin ihtiyaç duyduğu su miktarını nokta atışı tahmin eder.
+  - Meteorolojik tahmin modelleri ile senkronize kalarak gereksiz sulamayı önler, su kaynaklarını korur ve enerji maliyetlerini %30'a varan oranlarda azaltır.
 
-- **Ürün Takibi ve Hastalık Yönetimi**
-  - Ürün öneri sistemi  
-  - Hastalık ve zararlı tespiti  
-  - Erken uyarı bildirimleri  
+- **Biyolojik Güvenlik ve Ürün Takibi**
+  - Görüntü işleme teknolojileri (Computer Vision) destekli modüller ile yapraklar üzerindeki anomalileri tespit eder, hastalık ve zararlı risklerini erkenden raporlar.
+  - Ürün yaşam döngüsünü (tohumdan hasada) takip ederek, fenolojik evrelere göre özelleştirilmiş besleme ve bakım tavsiyeleri sunar.
 
-- **Hava Durumu Entegrasyonu**
-  - Anlık hava durumu verileri  
-  - 5-7 günlük tahminler  
-  - İklim analizi ve uyarılar  
+- **Hiper-Yerel Hava Durumu Entegrasyonu**
+  - Sadece genel hava tahminlerini değil, çiftliğinizin bulunduğu koordinatlara özel hiper-yerel verileri işler.
+  - Don riski, aşırı sıcaklık dalgalanmaları ve fırtına gibi kritik olaylarda anlık "Erken Uyarı Bildirimleri" göndererek mahsul kaybını minimize eder.
 
-### 👥 Kullanıcı Özellikleri
-- **Rol Tabanlı Erişim**
-  - Çiftçi paneli  
-  - Ziraat mühendisi ve uzman portalı  
-  - Yönetici kontrolleri ve özel izinler  
+### 👥 Sosyo-Ekonomik Kullanıcı Katmanı
+- **Rol Tabanlı Dinamik Erişim Kontrolü**
+  - **Üretici Paneli:** Operasyonel takvim, harcama analizleri ve üretim verimliliği grafiklerine erişim.
+  - **Ziraat Mühendisi Portalı:** Uzaktan danışmanlık, saha analizi ve bilimsel veri yorumlama araçları.
+  - **Yönetici Katmanı:** Sistem genelinde veri tutarlılığı, kullanıcı yönetimi ve stratejik raporlama.
 
-- **Bilgi Tabanı**
-  - Tarımda en iyi uygulamalar  
-  - Uzman makaleleri  
-  - Etkileşimli rehberler  
+- **Kolektif Bilgi ve Uzman Rehberliği**
+  - Sürekli güncellenen "Dijital Kütüphane" ile tarımdaki en son teknik gelişmeleri, akademik makaleleri ve başarılı vaka analizlerini kullanıcılarına sunar.
+  - Bölgesel topluluk forumları aracılığıyla çiftçiler arasında deneyim aktarımı ve dayanışma ağları oluşturur.
 
 ---
 
@@ -118,18 +116,16 @@ npm test
 # Backend testleri
 cd backend
 npm test
-🔒 Güvenlik
-JWT tabanlı kimlik doğrulama
+## 🔒 Güvenlik: Mimari Bütünlük ve Veri Mahremiyeti
 
-Rol tabanlı erişim denetimi
+ÇiftciAg, kullanıcı verilerinin güvenliğini ve sistem bütünlüğünü en üst düzeyde tutmak için çok katmanlı bir güvenlik stratejisi izler:
 
-Giriş doğrulama ve XSS koruması
-
-CORS politikası
-
-Rate Limiting
-
-Şifre hashleme (bcrypt, scrypt, vs.)
+- **JWT (JSON Web Token) Tabanlı Yetkilendirme:** Stateless kimlik doğrulama mekanizması ile sunucu yükünü azaltırken, güvenli oturum yönetimi sunar.
+- **Granüler Rol Tabanlı Erişim Denetimi (RBAC):** Her kullanıcı rolü (Çiftçi, Mühendis, Admin) sadece kendi görev alanı ile sınırlı verilere ve işlemlere erişebilir.
+- **Uçtan Uca Veri Doğrulama ve Sanitizasyon:** Tüm kullanıcı girişleri (input) XSS, SQL Injection ve NoSQL Injection saldırılarına karşı otomatik olarak temizlenir.
+- **Güvenli İletişim Protokolleri:** API uç noktaları arasında CORS politikaları ile sıkılaştırılmış erişim kontrolü sağlanır.
+- **Kriptografik Veri Güvenliği:** Hassas veriler ve kullanıcı şifreleri, sektör standardı olan Argon2 veya BCrypt algoritmaları ile tuzlanarak (salting) hashlenir.
+- **Rate Limiting ve DDoS Koruması:** Sistem, anormal trafik modellerini algılayarak Brute-force ve Denial of Service saldırılarını engellemek için hız sınırlayıcı modüller kullanır.
 
 ## 📜 Lisans
 
