@@ -131,9 +131,34 @@ Rate Limiting
 
 Şifre hashleme (bcrypt, scrypt, vs.)
 
-📝 Lisans
-Bu proje MIT lisansı ile lisanslanmıştır – detaylar için LICENSE dosyasına bakınız.
+## 📜 Lisans
 
-⚠️ Bu proje eğitim amaçlı geliştirilmiştir. Yetkisiz ticari kullanım yasaktır.
+Bu proje MIT lisansı ile lisanslanmıştır – detaylar için [LICENSE](LICENSE) dosyasına bakınız.
 
-<div align="center"> <p>© 2024 ÇiftciAg – Türkiye’nin Tarımsal Dijitalleşme Projesi</p> </div> ```
+---
+
+## 👨‍💻 Proje Sahibi
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/bahattinyunus.png" width="120px;" alt="Bahattin Yunus Çetin"/><br />
+      <b>Bahattin Yunus Çetin</b><br />
+      <sub>IT Architect & University Student</sub>
+    </td>
+    <td>
+      <b>Hakkında:</b><br />
+      Trabzon, Of'ta yaşayan bir üniversite öğrencisi ve IT mimarı olarak, tarım ve teknolojiyi bir araya getiren yenilikçi çözümler üzerine çalışmaktayım.
+      <br /><br />
+      <b>İletişim & Sosyal Medya:</b><br />
+      - 💼 <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/bahattinyunus/">bahattinyunus</a><br />
+      - 🐙 <b>GitHub:</b> <a href="https://github.com/bahattinyunus">bahattinyunus</a><br />
+      - 📧 <b>E-posta:</b> <a href="mailto:bahattinyunus@hotmail.com">bahattinyunus@hotmail.com</a><br />
+      - 📸 <b>Instagram:</b> @ciftciag (yakında!)
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+  <p>© 2024 ÇiftciAg – Türkiye’nin Tarımsal Dijitalleşme Projesi</p>
+</div>
